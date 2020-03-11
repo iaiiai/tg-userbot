@@ -26,7 +26,7 @@ def is_offline(fun):
 @client.on(events.NewMessage(func=lambda message: message.is_private))
 @is_offline
 async def replier(event: custom.Message):
-    await event.reply("Приветствую, я **Альфред - дворецкий**. Босс занят, скорее всего он спасает город. Оставьте ваше сообщение или напишите позже.")
+    await event.reply("Приветствую. Босс занят, скорее всего он спасает город. Оставьте ваше сообщение или напишите позже.")
 
 
 client.run_until_disconnected()
